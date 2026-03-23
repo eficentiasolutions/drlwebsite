@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Facebook, Instagram, Mail, Phone, MapPin } from 'lucide-react';
 
 export function Footer() {
@@ -8,33 +9,51 @@ export function Footer() {
 
   return (
     <footer className="border-t bg-muted/30">
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+      <div className="container mx-auto px-4 py-12 lg:py-16">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <div className="mb-6 flex items-center gap-3">
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary">
-                <span className="text-xl font-bold text-primary-foreground">DRL</span>
-              </div>
-              <span className="text-2xl font-bold">Clínicas Veterinarias DRL</span>
-            </div>
-            <p className="mb-6 max-w-md text-muted-foreground leading-relaxed">
+            <Link href="/" className="inline-block mb-6">
+              <Image
+                src="/logo-drl.svg"
+                alt="Clínicas Veterinarias DRL"
+                width={200}
+                height={73}
+                className="h-12 lg:h-16 w-auto"
+              />
+            </Link>
+            <p className="mb-6 max-w-md text-muted-foreground leading-relaxed text-sm lg:text-base">
               Más de 25 años cuidando de tu mascota con urgencias 24h, hospitalización y atención especializada. Siempre contigo, cuando lo necesites.
             </p>
 
             {/* Contact info */}
             <div className="mb-6 space-y-3">
               <div className="flex items-center gap-3 text-muted-foreground">
-                <Phone className="h-5 w-5 text-primary" />
-                <span>Urgencias 24h</span>
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10">
+                  <Phone className="h-5 w-5 text-primary" />
+                </div>
+                <div>
+                  <p className="font-medium text-foreground">Urgencias 24h</p>
+                  <p className="text-sm">900 000 000</p>
+                </div>
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
-                <Mail className="h-5 w-5 text-primary" />
-                <span>info@drl.vet</span>
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10">
+                  <Mail className="h-5 w-5 text-primary" />
+                </div>
+                <div>
+                  <p className="font-medium text-foreground">Email</p>
+                  <p className="text-sm">info@drl.vet</p>
+                </div>
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
-                <MapPin className="h-5 w-5 text-primary" />
-                <span>Alicante, España</span>
+                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10">
+                  <MapPin className="h-5 w-5 text-primary" />
+                </div>
+                <div>
+                  <p className="font-medium text-foreground">Ubicaciones</p>
+                  <p className="text-sm">Alicante, España</p>
+                </div>
               </div>
             </div>
 
@@ -117,12 +136,12 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 border-t pt-8">
-          <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-            <p className="text-sm text-muted-foreground">
+        <div className="mt-8 lg:mt-12 border-t pt-6 lg:pt-8">
+          <div className="flex flex-col items-center justify-between gap-3 md:flex-row">
+            <p className="text-xs lg:text-sm text-muted-foreground">
               © {currentYear} Clínicas Veterinarias DRL. Todos los derechos reservados.
             </p>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-xs lg:text-sm text-muted-foreground">
               Desarrollado por{' '}
               <a href="https://eficentia.com" className="font-semibold text-primary hover:underline">
                 Eficentia Solutions

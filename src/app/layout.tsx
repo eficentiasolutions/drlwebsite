@@ -71,11 +71,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className={`${inter.variable} font-sans antialiased`}>
+    <html lang="es" className={`${inter.variable} font-sans antialiased overflow-x-hidden`}>
       <head>
         <SchemaOrg />
       </head>
-      <body className="min-h-screen flex flex-col">
+      <body className="min-h-screen flex flex-col overflow-x-hidden">
         <Header />
         <main className="flex-1">
           {children}
