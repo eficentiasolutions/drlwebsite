@@ -13,40 +13,40 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Clínicas Veterinarias DRL | Urgencias 24h en Alicante",
-    template: "%s | Clínicas Veterinarias DRL",
+    default: "AI VetLab | Gestión de muestras biológicas para mascotas",
+    template: "%s | AI VetLab",
   },
-  description: "Clínicas veterinarias DRL con urgencias 24h, hospitalización y atención especializada. Más de 25 años cuidando de tu mascota en Elche, Torrevieja, Almoradí, Benijófar y San Fulgencio.",
-  keywords: ["veterinario", "urgencias 24h", "clínica veterinaria", "hospital veterinario", "Alicante", "Elche", "Torrevieja", "Almoradí", "Benijófar", "San Fulgencio", "mascotas"],
-  authors: [{ name: "Clínicas Veterinarias DRL" }],
+  description: "Gestión rápida, eficaz y económica de muestras biológicas veterinarias. Recepción, envío a laboratorios e interpretación de resultados con inteligencia artificial.",
+  keywords: ["análisis veterinario", "muestras biológicas", "laboratorio veterinario", "IA veterinaria", "análisis de sangre", "análisis de orina", "Almoradí", "diagnóstico veterinario"],
+  authors: [{ name: "AI VetLab" }],
   creator: "Eficentia Solutions",
-  publisher: "Clínicas Veterinarias DRL",
+  publisher: "AI VetLab",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://drl.vet"),
+  metadataBase: new URL("https://aivetlab.com"),
   openGraph: {
     type: "website",
     locale: "es_ES",
-    url: "https://drl.vet",
-    title: "Clínicas Veterinarias DRL | Urgencias 24h en Alicante",
-    description: "Urgencias 24h - 365 días del año. Más de 25 años cuidando de tu mascota.",
-    siteName: "Clínicas Veterinarias DRL",
+    url: "https://aivetlab.com",
+    title: "AI VetLab | Gestión de muestras biológicas para mascotas",
+    description: "Rápido, eficaz y económico. Gestión de muestras biológicas con IA.",
+    siteName: "AI VetLab",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Clínicas Veterinarias DRL",
+        alt: "AI VetLab",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Clínicas Veterinarias DRL | Urgencias 24h en Alicante",
-    description: "Urgencias 24h - 365 días del año. Más de 25 años cuidando de tu mascota.",
+    title: "AI VetLab | Gestión de muestras biológicas para mascotas",
+    description: "Rápido, eficaz y económico. Gestión de muestras biológicas con IA.",
     images: ["/og-image.jpg"],
   },
   robots: {
@@ -59,9 +59,6 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
-  },
-  verification: {
-    google: "4fA6K3n98bhov8Hi2akptZ6KSZSXYMuYj6iG3wOCfvM",
   },
 };
 

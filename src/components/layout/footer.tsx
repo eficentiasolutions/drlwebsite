@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { Facebook, Instagram, Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -15,35 +15,26 @@ export function Footer() {
           <div className="lg:col-span-2">
             <Link href="/" className="inline-block mb-6">
               <Image
-                src="/logo-drl.svg"
-                alt="Clínicas Veterinarias DRL"
-                width={200}
-                height={73}
-                className="h-12 lg:h-16 w-auto"
+                src="/logo.svg"
+                alt="AI VetLab - Gestión de muestras biológicas"
+                width={160}
+                height={50}
+                className="h-10 lg:h-12 w-auto"
               />
             </Link>
             <p className="mb-6 max-w-md text-muted-foreground leading-relaxed text-sm lg:text-base">
-              Más de 25 años cuidando de tu mascota con urgencias 24h, hospitalización y atención especializada. Siempre contigo, cuando lo necesites.
+              Gestión de muestras biológicas para mascotas. Rápido, eficaz y económico. Innovación en análisis veterinarios con inteligencia artificial.
             </p>
 
             {/* Contact info */}
             <div className="mb-6 space-y-3">
               <div className="flex items-center gap-3 text-muted-foreground">
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10">
-                  <Phone className="h-5 w-5 text-primary" />
-                </div>
-                <div>
-                  <p className="font-medium text-foreground">Urgencias 24h</p>
-                  <p className="text-sm">900 000 000</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3 text-muted-foreground">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/10">
                   <Mail className="h-5 w-5 text-primary" />
                 </div>
                 <div>
                   <p className="font-medium text-foreground">Email</p>
-                  <p className="text-sm">info@drl.vet</p>
+                  <p className="text-sm">globalmusic.sl@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
@@ -51,28 +42,10 @@ export function Footer() {
                   <MapPin className="h-5 w-5 text-primary" />
                 </div>
                 <div>
-                  <p className="font-medium text-foreground">Ubicaciones</p>
-                  <p className="text-sm">Alicante, España</p>
+                  <p className="font-medium text-foreground">Ubicación</p>
+                  <p className="text-sm">Almoradí, VC ES</p>
                 </div>
               </div>
-            </div>
-
-            {/* Social */}
-            <div className="flex gap-3">
-              <Link
-                href="https://facebook.com"
-                className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary text-primary-foreground transition-all hover:scale-110 hover:shadow-lg"
-                aria-label="Facebook"
-              >
-                <Facebook className="h-5 w-5" />
-              </Link>
-              <Link
-                href="https://instagram.com"
-                className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-purple-500 to-pink-500 text-white transition-all hover:scale-110 hover:shadow-lg"
-                aria-label="Instagram"
-              >
-                <Instagram className="h-5 w-5" />
-              </Link>
             </div>
           </div>
 
@@ -81,27 +54,27 @@ export function Footer() {
             <h3 className="mb-4 text-lg font-semibold">Enlaces rápidos</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="#" className="text-muted-foreground transition-colors hover:text-primary">
+                <Link href="/" className="text-muted-foreground transition-colors hover:text-primary">
                   Inicio
                 </Link>
               </li>
               <li>
-                <Link href="#servicios" className="text-muted-foreground transition-colors hover:text-primary">
+                <Link href="/acerca-de" className="text-muted-foreground transition-colors hover:text-primary">
+                  Acerca de
+                </Link>
+              </li>
+              <li>
+                <Link href="/servicios" className="text-muted-foreground transition-colors hover:text-primary">
                   Servicios
                 </Link>
               </li>
               <li>
-                <Link href="#clinicas" className="text-muted-foreground transition-colors hover:text-primary">
-                  Nuestras Clínicas
+                <Link href="/como-funciona" className="text-muted-foreground transition-colors hover:text-primary">
+                  Cómo funciona
                 </Link>
               </li>
               <li>
-                <Link href="#testimonios" className="text-muted-foreground transition-colors hover:text-primary">
-                  Testimonios
-                </Link>
-              </li>
-              <li>
-                <Link href="#contacto" className="text-muted-foreground transition-colors hover:text-primary">
+                <Link href="/#contacto" className="text-muted-foreground transition-colors hover:text-primary">
                   Contacto
                 </Link>
               </li>
@@ -139,7 +112,7 @@ export function Footer() {
         <div className="mt-8 lg:mt-12 border-t pt-6 lg:pt-8">
           <div className="flex flex-col items-center justify-between gap-3 md:flex-row">
             <p className="text-xs lg:text-sm text-muted-foreground">
-              © {currentYear} Clínicas Veterinarias DRL. Todos los derechos reservados.
+              © {currentYear} AI VetLab. Todos los derechos reservados.
             </p>
             <p className="text-xs lg:text-sm text-muted-foreground">
               Desarrollado por{' '}
